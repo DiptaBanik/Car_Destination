@@ -1,0 +1,52 @@
+
+body {
+  background-color: skyblue;
+}
+
+#randomDistanceBox {
+  border: 1px solid black;
+  background-color: aliceblue;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  text-align: center;
+  align-content: center;/* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+
+
+/* Existing styles... */
+
+#controls {
+  display: flex;
+  align-items: center;
+}
+
+#distanceInput {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 150px; /* Set width for the input */
+  height: 20px; /* Set height for the input */
+  padding: 5px; /* Add some padding */
+}
+#controls button {
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 120px; /* Set width for the button */
+  height: 35px; /* Set height for the button */
+  padding: 5px; /* Add some padding */
+}
+
+#randomButtonContainer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+#crossedText {
+  margin-top: 10px; /* Add margin between the text and button */
+}

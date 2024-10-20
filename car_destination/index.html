@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div id="scene">
+        <div id="destination">
+            <img src="dhaka.png" style="width: 150px; margin-left: 0;" id="dest">
+        </div>
+        <div id="car">
+            <img src="Taxi.png" style="width: 160px; margin-left: 0;" id="im">  
+        </div>   
+        
+        <div id="controls">
+            <input type="number" id="distanceInput" placeholder="For Dhaka" min="0">
+            <button onclick="moveDestination()">Set Destination</button>
+        </div>
+        <div id="randomButtonContainer">
+            <button id="randomDistanceButton" onclick="randomDistance()">Random car distance</button>
+            <div id="randomDistanceBox"></div>
+        </div>
+            <div id="crossedText" style="display: none;"></div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

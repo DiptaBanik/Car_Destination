@@ -1,0 +1,63 @@
+
+function setCarDistance() {
+    var dist = document.getElementById("distance").value;
+    var car = document.getElementById("car");
+    car.style.marginLeft = dist + "px";
+    checkCrossing();
+}
+function moveCarRandom(){
+    var randomDistance=generateRandom(400,1040);
+    var car = document.getElementById("car");
+    car .style.marginLeft=randomDistance+"px";
+}
+
+function generateRandom(min, max) {
+    var x= Math.floor(Math.random() * (max - min)) + min;
+    document.getElementById("demo").innerHTML = x;
+    return x;
+}
+function  checkCrossing(){
+    /*var a = 100;
+    var x = a+Math.floor(Math.random()*1000); 
+    document.getElementById("demo").innerHTML = x;
+    return x;
+}*/
+var mirpurImage = document.getElementById("mirpur");
+var carImage = document.getElementById("car");
+
+var mirpurRight = mirpurImage.getBoundingClientRect().right;
+var carLeft = carImage.getBoundingClientRect().left;
+
+if (carLeft >= mirpurRight) {
+    document.querySelector(".demo").innerHTML += "<br>The car crossed the Mirpur.";
+} else {
+    document.querySelector(".demo").innerHTML += "<br>The car did not cross the Mirpur.";
+}}
+/*
+
+function moveCarRandom() {
+    var randomDistance = generateRandom(400, 1040); 
+    var car = document.getElementById("car");
+    car.style.marginLeft = randomDistance + "px";
+    document.querySelector(".demo").innerHTML = "Random distance: " + randomDistance + "px";
+    checkCrossing();
+}
+
+function generateRandom(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+
+function checkCrossing() {
+    var mirpurImage = document.getElementById("mirpur");
+    var carImage = document.getElementById("car");
+
+    var mirpurRight = mirpurImage.getBoundingClientRect().right;
+    var carLeft = carImage.getBoundingClientRect().left;
+
+    if (carLeft >= mirpurRight) {
+        document.querySelector(".demo").innerHTML += "<br>The car crossed the Mirpur.";
+    } else {
+        document.querySelector(".demo").innerHTML += "<br>The car did not cross the Mirpur.";
+    }
+}*/
